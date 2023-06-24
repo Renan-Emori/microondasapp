@@ -1,0 +1,24 @@
+﻿@model PreDefinidoModel
+
+
+
+<div class="text-center">
+
+    <h1 class="display-4">Tempo de aquecimento</h1>
+    <input id="myid" value="@Model.Id" readonly style="display: none;">
+    <input id="tmpa" value="@Model.Tempo" readonly style="display: none;">
+    <input id="ptnca" value="@Model.Potencia" readonly style="display: none;">
+    <button class="btn btn-primary" id="btnstarta">Aquecer</button>
+</div>
+
+<form id="myForm2" style="display: none;">
+</form>
+<form id="myForm3" style="display: none;">
+</form>
+<div id="countdown"></div>
+<button class="btn btn-primary" id="btnadd1" style="display: none; margin-bottom: 5px;">Adicionar tempo</button>
+<button class="btn btn-primary" id="btnstop1" style="display: none; margin-bottom: 5px;">Pausar</button>
+<div id="pontos"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/Aquecer2.js"></script>
