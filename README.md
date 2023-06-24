@@ -1,7 +1,7 @@
 # microondasapp
 
 + c# .net 6.0 MVC
-+ 1) git clone https://github.com/Renan-Emori/microondasapp
++ git clone https://github.com/Renan-Emori/microondasapp
 
 1) o arquivo `database.bacpac` é a database com os moldes pré-definidos para importar no SQL-server usando o "Import data-tier Application"
 2) a string connection fica no arquivo `appsettings.json`, não sei codificar
