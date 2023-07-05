@@ -1,0 +1,81 @@
+﻿
+
+<h1 class="display-4">Microondas</h1>
+<br />
+
+
+<form id="myForm">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Tempo</h3>
+                <div class="btn-group-vertical ml-4 mt-4" role="group" aria-label="Basic example">
+                    <div class="input-group">
+                        <input type="number" class="text-center form-control-lg mb-2" id="tmp" placeholder="1-120 segundos">
+                    </div>
+                    <div class="btn-group">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="1">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="2">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="3">
+                    </div>
+                    <div class="btn-group">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="4">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="5">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="6">
+                    </div>
+                    <div class="btn-group">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="7">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="8">
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="9">
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('tmp').value=document.getElementById('tmp').value.slice(0, -1);">&lt;</button>
+                        <input type="button" name="nmbrbtn" class="btn btn-outline-secondary py-3" value="0">
+                    </div>
+                </div>
+        </div>
+        <div class="col-sm-6">
+            <h3>Potência</h3>
+                <div class="btn-group-vertical ml-4 mt-4" role="group" aria-label="Basic example">
+                    <div class="input-group">
+                        <input type="number" class="text-center form-control-lg mb-2" id="ptnc" placeholder="até 10">
+                    </div>
+                    <div class="btn-group">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="1">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="2">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="3">
+                    </div>
+                    <div class="btn-group">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="4">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="5">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="6">
+                    </div>
+                    <div class="btn-group">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="7">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="8">
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="9">
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('ptnc').value=document.getElementById('ptnc').value.slice(0, -1);">&lt;</button>
+                        <input type="button" name="nmbrbtn2" class="btn btn-outline-secondary py-3" value="0">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br />
+</form>
+    <div class="text-center">
+    <button class="btn btn-primary" id="btnclose" style="margin-bottom: 5px;">Aquecer</button>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" id="btnclose2">Início Rápido</button>
+    </div>
+
+
+<form id="myForm2" style="display: none;">
+</form>
+<form id="myForm3" style="display: none;">
+</form>
+<div id="countdown"></div>
+<button class="btn btn-primary" id="btnadd" style="display: none; margin-bottom: 5px;">Adicionar tempo</button>
+<button class="btn btn-primary" id="btnstop" style="display: none; margin-bottom: 5px;">Pausar</button>
+<div id="pontos"></div>

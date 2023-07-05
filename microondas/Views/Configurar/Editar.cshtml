@@ -1,0 +1,49 @@
+﻿@model PreDefinidoModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="text-center">
+
+    <h1 class="display-4">Editar padrão</h1>
+
+</div>
+
+<form asp-controller="Configurar" asp-action="Editar" method="post">
+    <div class="col-md-6 mb-3">
+        <label for="nomeprog">Nome do programa</label>
+        <input type="text" asp-for="Nome" id="nomeprog" class="form-control" placeholder="Insira o nome">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="alimento">Alimento</label>
+        <input type="text" id="alimento" asp-for="Alimento" class="form-control" placeholder="Insira o nome do alimento">
+        @Html.ValidationMessageFor(x => x.Alimento)
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-group col-md-2">
+            <label for="potencia">Potência</label>
+            <input type="text" asp-for="Potencia" class="form-control" id="potencia">
+            @Html.ValidationMessageFor(x => x.Potencia)
+        </div>
+        <small class="form-text text-muted">Número entre 1 e 10</small>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-group col-md-2">
+            <label for="tempo">Tempo</label>
+            <input type="text" asp-for="Tempo" class="form-control" id="tempo">
+            @Html.ValidationMessageFor(x => x.Tempo)
+        </div>
+        <small class="form-text text-muted">O tempo deve ser entre 1 e 120 segundos</small>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="instrucao">Instrução</label>
+        <input type="text" id="instrucao" asp-for="Instrucoes" class="form-control" placeholder="Opcional">
+        @Html.ValidationMessageFor(x => x.Instrucoes)
+    </div>
+    <button type="submit" class="btn btn-primary">Alterar</button>
+    <a role="button" class="btn btn-secondary" asp-controller="Configurar" asp-action="Configurar">Voltar</a>
+</form>
